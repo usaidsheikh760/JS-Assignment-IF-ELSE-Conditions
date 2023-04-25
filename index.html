@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+    //Q1;
+
+    let input = prompt("Enter any number or letter");
+    let inputChar = input.charCodeAt(0);
+    if ( inputChar >= 48 && inputChar <= 57) {
+        alert ("Your input is a number");
+    }
+    else if ( inputChar >= 65 && inputChar <= 90) {
+        alert ("Your input is an Uppercase letter");
+    }
+    else if ( inputChar >= 97 && inputChar <= 120) {
+        alert ("Your input is a Lowercase letter");
+    }
+    else {
+        alert ("Your input does not contain any number or letter");
+    }
+    //end;
+
+    //Q2;
+
+    let num1 = +prompt("Enter first Integer");
+    let num2 = +prompt("Enter second Integer");
+
+    if ( num1 > num2 ){
+        alert ( num1 + " is greater then " + num2 );
+    }
+    else if ( num1 < num2 ){
+        alert ( num2 + " is greater then " + num1 );
+    }
+    else {
+        alert ( num1 + " is equal to " + num2 );
+    }
+    //end;
+
+    //Q3;
+
+    let num3 = +prompt("enter a number");
+
+    if ( num3 > 0 ) {
+        alert ("Your input number is positive number");
+    }
+    else if ( num3 < 0 ) {
+        alert ("Your input number is negative number");
+    }
+    else if ( num3 === 0 ){
+        alert ("Your input number is zero");
+    }
+    else {
+        alert ("Enter a number");
+    }
+    //end;
+
+
+    //Q4;
+
+    let input1 = prompt("Enter a character");
+    input2 = input1.toLowerCase();
+    if ( input2 === "a" || input1 === "e" || input1 === "i" || input1 === "o" || input1 === "u" ){
+        alert ("Your input is a vowel character");
+    }
+    else if ( input2.length > 0 ){
+        alert ("Please enter a character not a word");
+    }
+    else {
+        alert ("Your input is a not vowel character");
+    }
+
+    //end;
+
+    //Q5;
+
+    let correctPassword = "password123";
+    let inputPassword = prompt("Enter your password");
+
+    if ( inputPassword === ""){
+        alert ("Please enter your password");
+    }
+    else if ( inputPassword === correctPassword ){
+        alert ("Your password is correct");
+    }
+    else {
+        alert ("Incorrect password");
+    }
+    //end;
+
+
+    //Q6;
+   // This if/else statement does not work. Try to fix it:
+    
+    var greeting;
+    var hour = 13;
+    if (hour < 18) {
+        greeting = "Good day";
+    }
+    else{
+        greeting = "Good evening";
+    }
+
+    //end;
+
+    //Q7;
+
+    let inputTime = prompt("Enter time in 24 hours format" , "like 1900 = 7pm");
+    if ( inputTime >= 0000 && inputTime < 1200 ) {
+        alert ("Good Morning");
+     } 
+    else if ( inputTime >= 1200 && inputTime < 1700 ) {
+        alert ("Good Afternoon");
+     } 
+    else if ( inputTime >= 1700 && inputTime < 2100 ) {
+        alert ("Good Evening");
+     } 
+    else if ( inputTime >= 2100 && inputTime < 2359 ) {
+        alert ("Good Night");
+     } 
+     else {
+        alert ("Wrong input");
+     }
+     //end;
+
+
+    </script>
+</body>
+
+</html>
